@@ -12,6 +12,7 @@
 ["project.clj" (render "project.clj" data)]
 [".gitignore" (render "gitignore")]
 ["README.md" (render "README.md" data)]
+["Procfile" (render "Procfile" data)]
 ["test/{{sanitized}}/handler_test.clj" (render "handler_test.clj" data)]
 ["src/{{sanitized}}/db.clj" (render "db.clj" data)]
 ["src/{{sanitized}}/core.clj" (render "core.clj" data)]
