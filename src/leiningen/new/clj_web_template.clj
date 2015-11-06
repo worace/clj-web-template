@@ -10,6 +10,8 @@
               :sanitized (name-to-path name)}]
     (->files data ["src/{{sanitized}}/views.clj" (render "views.clj" data)]
 ["project.clj" (render "project.clj" data)]
+[".gitignore" (render "gitignore")]
+["README.md" (render "README.md" data)]
 ["test/{{sanitized}}/handler_test.clj" (render "handler_test.clj" data)]
 ["src/{{sanitized}}/db.clj" (render "db.clj" data)]
 ["src/{{sanitized}}/core.clj" (render "core.clj" data)]
